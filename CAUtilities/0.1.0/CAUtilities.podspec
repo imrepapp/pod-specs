@@ -12,7 +12,11 @@ Pod::Spec.new do |s|
   s.version          = "0.1.0"
   s.summary          = "General utilities from CreApp Development"
   s.description      = <<-DESC
-                        CADictionaryUtil NSDictionary utilities
+                        List of utilities:
+                        CADictionaryUtil: NSDictionary handling
+                        CAFileUtil: General file handling
+                        CAAccountUtil: User account handling
+
                        DESC
   s.homepage         = "https://github.com/imrepapp/CAUtilities"
   s.license          = 'MIT'
