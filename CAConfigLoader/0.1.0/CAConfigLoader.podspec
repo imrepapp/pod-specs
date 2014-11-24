@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
   s.author           = { "Papp Imre" => "papp.imre.imr@gmail.com" }
   s.source           = { :git => "https://github.com/imrepapp/CAConfigLoader.git", :tag => s.version.to_s }
 
-  s.platform     = :ios, '7.0'
+  s.platform     = :ios, '6.0'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes'
@@ -32,5 +32,5 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'CAUtilities', '~> 0.1'
 end
