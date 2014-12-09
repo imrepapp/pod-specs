@@ -13,8 +13,8 @@ Pod::Spec.new do |s|
   s.summary          = "General utilities from CreApp Development"
   s.description      = <<-DESC
                         List of utilities:
-			CAConfigLoader: creapp configuration json loader
-			CAInstallation: general installation utilities
+                        CAConfigLoader: creapp configuration json loader
+                        CAInstallation: general installation utilities
                         CADictionaryUtil: NSDictionary handling
                         CAFileUtil: General file handling
                         CAAccountUtil: User account handling
@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '6.1'
   s.requires_arc = true
 
-  s.dependency   = 'UIColor-HexString', '~> 1.1'
+  s.dependency   'UIColor-HexString', '~> 1.1'
 
   s.source_files = 'Classes'
 end
