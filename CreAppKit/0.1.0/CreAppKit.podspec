@@ -27,5 +27,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '6.1'
   s.requires_arc = true
 
-  s.source_files = 'Pod/Classes'
+  s.dependency   = 'UIColor-HexString', '~> 1.1'
+
+  s.source_files = 'Classes'
 end
