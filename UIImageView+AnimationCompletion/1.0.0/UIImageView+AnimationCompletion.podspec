@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.homepage         = "https://github.com/imrepapp/CreAppKit"
   s.license          = 'MIT'
   s.author           = { "Gurpreet Singh" => "" }
-  s.source           = { :git => "https://github.com/imrepapp/CreAppKit.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/imrepapp/UIImageView-AnimationCompletion.git", :tag => s.version.to_s }
 
   s.platform     = :ios, '6.1'
   s.requires_arc = true
