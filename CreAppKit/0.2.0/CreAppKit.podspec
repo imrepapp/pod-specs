@@ -29,5 +29,5 @@ Pod::Spec.new do |s|
 
   s.dependency   'UIColor-HexString', '~> 1.1'
 
-  s.source_files = 'Classes'
+  s.source_files = [ 'Classes', 'Classes/Categories' ]
 end
