@@ -28,6 +28,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.dependency   'UIColor-HexString', '~> 1.1'
+  s.dependency   'Reachability', '~> 3.2'
 
   s.source_files = [ 'Classes', 'Classes/Categories' ]
 end
