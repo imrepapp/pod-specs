@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.author       = { 'Imre Papp' => 'papp.imre.imr@gmail.com' }
   s.platform     = :ios, '7.0'
   
-#  s.source_files  = 'CAKSideMenuContainer', 'CAKSideMenuContainer/**/*.{h,m}'
+  s.source_files  = 'CAKSideMenuContainer', 'CAKSideMenuContainer/**/*.{h,m}'
   s.public_header_files = '*.h'
   s.vendored_libraries = '*.a'
   s.requires_arc  = true
