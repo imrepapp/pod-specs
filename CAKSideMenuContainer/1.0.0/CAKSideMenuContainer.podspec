@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '7.0'
   
 #  s.source_files  = 'CAKSideMenuContainer', 'CAKSideMenuContainer/**/*.{h,m}'
-#  s.public_header_files = 'CAKSideMenuContainer/**/*.h'
+  s.public_header_files = '*.h'
   s.requires_arc  = true
 
   s.source        = { :http => "http://lib.creapp.hu/ios/CAKSideMenuContainer-#{s.version}.tgz" }
