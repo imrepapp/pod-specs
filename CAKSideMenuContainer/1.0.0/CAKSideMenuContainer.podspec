@@ -12,8 +12,8 @@ Pod::Spec.new do |s|
   s.author       = { 'Imre Papp' => 'papp.imre.imr@gmail.com' }
   s.platform     = :ios, '7.0'
   
-  s.source_files  = 'CAKSideMenuContainer', 'CAKSideMenuContainer/**/*.{h,m}'
-  s.public_header_files = 'CAKSideMenuContainer/**/*.h'
+#  s.source_files  = 'CAKSideMenuContainer', 'CAKSideMenuContainer/**/*.{h,m}'
+#  s.public_header_files = 'CAKSideMenuContainer/**/*.h'
   s.requires_arc  = true
 
   s.source        = { :http => "http://lib.creapp.hu/ios/CAKSideMenuContainer-#{s.version}.tgz" }
