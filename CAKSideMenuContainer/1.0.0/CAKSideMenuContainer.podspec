@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
 		   DESC
 
   s.homepage     = "https://github.com/imrepapp/CAKSideMenuContainer"
-  s.license      = "MIT (example)"
+  s.license      = "MIT"
   s.author       = { 'Imre Papp' => 'papp.imre.imr@gmail.com' }
   s.platform     = :ios, '7.0'
   
