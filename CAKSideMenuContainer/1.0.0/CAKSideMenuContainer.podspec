@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|  
   s.name         = "CAKSideMenuContainer"
   s.version      = "1.0.0"
-  s.summary      = "use MFSideMenu with UIStoryboatSegue"
+  s.summary      = "use MFSideMenu with UIStoryboardSegue"
 
   s.description  = <<-DESC
                    CreAppKit Side Menu extends of MFSideMenu with UIStoryboardSegue usage
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   
 #  s.source_files  = 'CAKSideMenuContainer', 'CAKSideMenuContainer/**/*.{h,m}'
   s.public_header_files = '*.h'
-  s.vendored_libraries = 'libCAKSideMenuContainer-#{s.version}.a'
+  s.vendored_libraries = '*.a'
   s.requires_arc  = true
 
   s.source        = { :http => "http://lib.creapp.hu/ios/CAKSideMenuContainer-#{s.version}.tgz" }
