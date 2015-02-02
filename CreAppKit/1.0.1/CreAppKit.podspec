@@ -19,16 +19,19 @@ Pod::Spec.new do |s|
                         CAFileUtil: General file handling
                         CAAccountUtil: User account handling
                        DESC
-  s.homepage         = "https://github.com/imrepapp/CreAppKit"
-  s.license          = 'MIT'
-  s.author           = { "Papp Imre" => "papp.imre.imr@gmail.com" }
-  s.source           = { :git => "https://github.com/imrepapp/CreAppKit.git", :tag => s.version.to_s }
 
-  s.platform     = :ios, '6.1'
-  s.requires_arc = true
+  s.homepage     = "https://creapp.hu"
+  s.license      = "MIT"
+  s.author       = { 'Imre Papp' => 'papp.imre.imr@gmail.com' }
+  s.platform     = :ios, '7.0'
+
+  s.source_files       = '*.h'
+  s.vendored_libraries = '*.a'
+  s.library            = "#{s.name}-#{s.version}"
+  s.requires_arc       = true
+
+  s.source             = { :http => "http://lib.creapp.hu/ios/#{s.name}-#{s.version}.tgz" }
 
   s.dependency   'UIColor-HexString', '~> 1.1'
   s.dependency   'Reachability', '~> 3.2'
-
-  s.source_files = [ 'Classes', 'Classes/Categories' ]
 end
