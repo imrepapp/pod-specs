@@ -16,7 +16,6 @@ Pod::Spec.new do |s|
   s.preserve_paths = '*.a'
 
   s.vendored_libraries = '*.a'
-  s.library = s.name
   s.requires_arc  = true
 
   s.source        = { :http => "http://lib.creapp.hu/ios/CAKSideMenuContainer-#{s.version}.tgz" }
