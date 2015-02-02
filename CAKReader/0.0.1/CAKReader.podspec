@@ -12,12 +12,8 @@ Pod::Spec.new do |s|
   s.version          = "0.0.1"
   s.summary          = "General utilities from CreApp Development"
   s.description      = <<-DESC
-                        List of utilities:
-                        CAConfigLoader: creapp configuration json loader
-                        CAInstallation: general installation utilities
-                        CADictionaryUtil: NSDictionary handling
-                        CAFileUtil: General file handling
-                        CAAccountUtil: User account handling
+                        Complex online data reader library for a module based framework
+                        Customizable Models, unique list and page view for models
                        DESC
 
   s.homepage     = "https://creapp.hu"
