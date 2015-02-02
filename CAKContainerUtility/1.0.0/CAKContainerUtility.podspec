@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.description        = <<-DESC
                          Base helper to ContainerView with UIStroyboardSegue extension.
                          DESC
-  s.homepage           = 'https://github.com/imrepapp/CAKContainerUtility'
+  s.homepage           = "https://creapp.hu"
   s.license            = "MIT"
   s.author             = { 'Imre Papp' => 'papp.imre.imr@gmail.com' }
   s.platform           = :ios, '7.0'
