@@ -5,19 +5,19 @@ Pod::Spec.new do |s|
 
   s.description  = <<-DESC
                    CreAppKit Side Menu extends of MFSideMenu with UIStoryboardSegue usage
-		   DESC
+		           DESC
 
   s.homepage     = "https://github.com/imrepapp/CAKSideMenuContainer"
   s.license      = "MIT"
   s.author       = { 'Imre Papp' => 'papp.imre.imr@gmail.com' }
   s.platform     = :ios, '7.0'
   
-  s.source_files  = '*.h'
+  s.source_files       = '*.h'
   s.vendored_libraries = '*.a'
-  s.library = "#{s.name}-#{s.version}"
-  s.requires_arc  = true
+  s.library            = "#{s.name}-#{s.version}"
+  s.requires_arc       = true
 
-  s.source        = { :http => "http://lib.creapp.hu/ios/CAKSideMenuContainer-#{s.version}.tgz" }
+  s.source             = { :http => "http://lib.creapp.hu/ios/#{s.name}-#{s.version}.tgz" }
 
   s.dependency   'MFSideMenu', '~> 0.5'
 end  
