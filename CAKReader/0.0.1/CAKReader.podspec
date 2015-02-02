@@ -26,9 +26,9 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '7.0'
 
   s.requires_arc        = true
-  s.preserve_paths      = "${s.name}.framework",
-  s.public_header_files = "${s.name}.framework/Headers/*.h",
-  s.vendored_frameworks = "${s.name}.framework"
+  s.preserve_paths      = "#{s.name}.framework",
+  s.public_header_files = "#{s.name}.framework/Headers/*.h",
+  s.vendored_frameworks = "#${s.name}.framework"
 
   s.source             = { :http => "http://lib.creapp.hu/ios/#{s.name}-#{s.version}.tgz" }
 
