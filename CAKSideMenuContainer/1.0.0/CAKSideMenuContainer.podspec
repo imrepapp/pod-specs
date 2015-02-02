@@ -7,7 +7,6 @@ Pod::Spec.new do |s|
                    CreAppKit Side Menu extends of MFSideMenu with UIStoryboardSegue usage
 		           DESC
 
-  s.homepage     = "https://github.com/imrepapp/CAKSideMenuContainer"
   s.license      = "MIT"
   s.author       = { 'Imre Papp' => 'papp.imre.imr@gmail.com' }
   s.platform     = :ios, '7.0'
