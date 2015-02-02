@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   
   s.source_files  = '*.h'
   s.vendored_libraries = '*.a'
-  s.libraray = 'lib#{s.name}-#{s.version}'
+  s.library = 'lib#{s.name}-#{s.version}'
   s.requires_arc  = true
 
   s.source        = { :http => "http://lib.creapp.hu/ios/CAKSideMenuContainer-#{s.version}.tgz" }
