@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   s.preserve_paths      = "#{s.name}.framework",
   s.public_header_files = "#{s.name}.framework/Headers/*.h",
   s.vendored_frameworks = "#{s.name}.framework"
-  s.resources           = ["#{s.name}.framework/*.nib", "#{s.name}.framework/*.storyboard"]
+  s.resources           = ["#{s.name}.framework/*.xib", "#{s.name}.framework/*.storyboard"]
 
   s.source             = { :http => "http://lib.creapp.hu/ios/#{s.name}-#{s.version}.tgz" }
 
