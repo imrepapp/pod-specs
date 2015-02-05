@@ -41,8 +41,8 @@ Pod::Spec.new do |s|
                                   '#import <Foundation/Foundation.h>',
                                   '#import <RestKit/RestKit.h>',
                                   '#import <CreAppKit/CreAppKit.h>'
-    dev.source_files       = "*.{h,m}"
-    dev.resources          = ["*.{xib,storyboard}"]
+    dev.source_files       = "#{s.name}/**/*.{h,m}"
+    dev.resources          = ["#{s.name}/**/*.{xib,storyboard}"]
 
     dev.dependency   'CreAppKit', '~> 1.0'
     dev.dependency   'CAKSideMenuContainer', '~> 1.0'
