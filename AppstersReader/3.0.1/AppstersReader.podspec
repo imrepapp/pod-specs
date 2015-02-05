@@ -22,22 +22,16 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '7.0'
 
   s.requires_arc        = true
-  s.default_subspec     = 'Framework'
+  s.preserve_paths      = "#{s.name}.framework",
+  s.public_header_files = "#{s.name}.framework/Headers/*.h",
+  s.vendored_frameworks = "#{s.name}.framework"
+  s.resources           = ["#{s.name}.framework/*.xib", "#{s.name}.framework/*.storyboard"]
+
+  s.source             = { :http => "http://lib.creapp.hu/ios/#{s.name}-#{s.version}.tgz" }
 
   s.dependency   'RestKit', '~> 0.24'
   s.dependency   'SSPullToRefresh', '~> 1.2'
-
-  s.subspec 'Framework' do |fwrk|
-      fwrk.preserve_paths      = "#{s.name}.framework",
-      fwrk.public_header_files = "#{s.name}.framework/Headers/*.h",
-      fwrk.vendored_frameworks = "#{s.name}.framework"
-      fwrk.resources           = ["#{s.name}.framework/*.xib", "#{s.name}.framework/*.storyboard"]
-
-      fwrk.source             = { :http => "http://lib.creapp.hu/ios/#{s.name}-#{s.version}.tgz" }
-
-      fwrk.dependency   'CreAppKit', '~> 1.0'
-      fwrk.dependency   'CAKSideMenuContainer', '~> 1.0'
-      fwrk.dependency   'CAKContainerUtility', '~> 1.0'
-  end
-
+  s.dependency   'CreAppKit', '~> 1.0'
+  s.dependency   'CAKSideMenuContainer', '~> 1.0'
+  s.dependency   'CAKContainerUtility', '~> 1.0'
 end
