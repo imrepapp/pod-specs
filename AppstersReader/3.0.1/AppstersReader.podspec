@@ -24,8 +24,8 @@ Pod::Spec.new do |s|
   s.requires_arc        = true
   s.default_subspec     = 'Framewrok'
 
-  fwrk.dependency   'RestKit', '~> 0.24'
-  fwrk.dependency   'SSPullToRefresh', '~> 1.2'
+  s.dependency   'RestKit', '~> 0.24'
+  s.dependency   'SSPullToRefresh', '~> 1.2'
 
   s.subspec 'Framework' do |fwrk|
       fwrk.preserve_paths      = "#{s.name}.framework",
