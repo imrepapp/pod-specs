@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   s.source       = { :http => "http://lib.creapp.hu/ios/#{s.name}-#{s.version}.tgz" }
 
   s.requires_arc    = true
-  s.default_subspec = Framework
+  s.default_subspec = 'Framework'
 
   s.subspec 'Framework' do |fs|
     fs.preserve_paths      = "#{s.name}.framework",
