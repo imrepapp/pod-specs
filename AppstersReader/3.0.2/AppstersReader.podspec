@@ -37,7 +37,10 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'Devel' do |dev|
-    dev.prefix_header_file = "#{s.name}.pch"
+    dev.prefix_header_contents  = '#import <UIKit/UIKit.h>',
+                                  '#import <Foundation/Foundation.h>',
+                                  '#import <RestKit/RestKit.h>',
+                                  '#import <CreAppKit/CreAppKit.h>'
     dev.source_files       = "*.{h,m}"
     dev.resources          = ["*.{xib,storyboard}"]
 
