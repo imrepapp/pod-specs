@@ -40,7 +40,8 @@ Pod::Spec.new do |s|
     dev.prefix_header_contents  = '#import <UIKit/UIKit.h>',
                                   '#import <Foundation/Foundation.h>',
                                   '#import <RestKit/RestKit.h>',
-                                  '#import <CreAppKit/CreAppKit.h>'
+                                  '#import <CreAppKit/CreAppKit.h>',
+                                  '#import "NSObject+Advanced.h"'
     dev.source_files       = "#{s.name}/**/*.{h,m}"
     dev.resources          = ["#{s.name}/**/*.{xib,storyboard}"]
 
