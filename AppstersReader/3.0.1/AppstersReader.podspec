@@ -40,9 +40,4 @@ Pod::Spec.new do |s|
       fwrk.dependency   'CAKContainerUtility', '~> 1.0'
   end
 
-  s.subspec 'Devel' do |dev|
-      dev.source_files = "AppstersReader/**/*.{h,m}"
-      dev.resources    = ["#{s.name}.framework/*.xib", "#{s.name}.framework/*.storyboard"]
-  end
-
 end
