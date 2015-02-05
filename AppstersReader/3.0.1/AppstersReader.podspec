@@ -22,12 +22,15 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '7.0'
 
   s.requires_arc        = true
-  s.preserve_paths      = "#{s.name}.framework",
-  s.public_header_files = "#{s.name}.framework/Headers/*.h",
-  s.vendored_frameworks = "#{s.name}.framework"
-  s.resources           = ["#{s.name}.framework/*.xib", "#{s.name}.framework/*.storyboard"]
 
-  s.source             = { :http => "http://lib.creapp.hu/ios/#{s.name}-#{s.version}.tgz" }
+  s.subspec 'Framework' do |fwrk|
+    fwrk.preserve_paths      = "#{s.name}.framework",
+    fwrk.public_header_files = "#{s.name}.framework/Headers/*.h",
+    fwrk.vendored_frameworks = "#{s.name}.framework"
+    fwrk.resources           = ["#{s.name}.framework/*.xib", "#{s.name}.framework/*.storyboard"]
+
+    fwrk.source             = { :http => "http://lib.creapp.hu/ios/#{s.name}-#{s.version}.tgz" }
+  end
 
   s.dependency   'RestKit', '~> 0.24'
   s.dependency   'SSPullToRefresh', '~> 1.2'
