@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '7.0'
 
   s.requires_arc        = true
-  s.default_subspec     = 'Framewrok'
+  s.default_subspec     = 'Framework'
 
   s.dependency   'RestKit', '~> 0.24'
   s.dependency   'SSPullToRefresh', '~> 1.2'
