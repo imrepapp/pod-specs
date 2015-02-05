@@ -40,9 +40,6 @@ Pod::Spec.new do |s|
     dev.source_files = "#{s.name}/**/*.{h,m}"
     dev.resources    = [#{s.name}/*.xib", "#{s.name}/*.storyboard"]
 
-    dev.dependency   'CreAppKit', '~> 1.0'
-    dev.dependency   'CAKSideMenuContainer', '~> 1.0'
-    dev.dependency   'CAKContainerUtility', '~> 1.0'
   end
 
 
