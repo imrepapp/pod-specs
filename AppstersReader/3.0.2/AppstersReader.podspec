@@ -37,7 +37,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'Devel' do |dev|
-    dev.prefix_header_file = '#{s.name}.pch'
+    dev.prefix_header_file = "#{s.name}.pch"
     dev.source_files       = "*.{h,m}"
     dev.resources          = ["*.{xib,storyboard}"]
 
