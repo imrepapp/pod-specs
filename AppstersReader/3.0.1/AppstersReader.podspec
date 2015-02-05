@@ -22,14 +22,13 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '7.0'
 
   s.requires_arc        = true
+  s.source             = { :http => "http://lib.creapp.hu/ios/#{s.name}-#{s.version}.tgz" }
 
   s.subspec 'Core' do |cs|
     cs.preserve_paths      = "#{s.name}.framework",
     cs.public_header_files = "#{s.name}.framework/Headers/*.h",
     cs.vendored_frameworks = "#{s.name}.framework"
     cs.resources           = ["#{s.name}.framework/*.xib", "#{s.name}.framework/*.storyboard"]
-
-    cs.source             = { :http => "http://lib.creapp.hu/ios/#{s.name}-#{s.version}.tgz" }
   end
 
   s.dependency   'RestKit', '~> 0.24'
