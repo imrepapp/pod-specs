@@ -37,8 +37,9 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'Devel' do |dev|
-    dev.source_files = "#{s.name}/**/*.{h,m}"
-    dev.resources    = ["#{s.name}/*.xib", "#{s.name}/*.storyboard"]
+    dev.prefix_header_file = '#{s.name}.pch'
+    dev.source_files       = "*.{h,m}"
+    dev.resources          = ["*.{xib,storyboard}"]
 
     dev.dependency   'CreAppKit', '~> 1.0'
     dev.dependency   'CAKSideMenuContainer', '~> 1.0'
