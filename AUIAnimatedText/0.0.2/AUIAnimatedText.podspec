@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'AUIAnimatedText'
-  s.version      = '0.0.1'
+  s.version      = '0.0.2'
   s.summary      = 'A drop-in UILabel replacement that makes almost all properties animatable by using a CATextLayer instead of CALayer.'
   s.homepage     = 'https://github.com/adam-siton/AUIAnimatedText'
   s.author       = { 'Adam Siton'=> 'adamsiton@gmail.com' }
