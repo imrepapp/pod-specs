@@ -9,11 +9,18 @@ Pod::Spec.new do |s|
   s.license            = "MIT"
   s.author             = { 'Imre Papp' => 'papp.imre.imr@gmail.com' }
   s.platform           = :ios, '7.0'
-
-  s.source_files       = '*.h'
-  s.vendored_libraries = '*.a'
-  s.library            = "#{s.name}-#{s.version}"
+  s.source             = { :http => "http://lib.creapp.hu/ios/#{s.name}-#{s.version}.tgz" }
   s.requires_arc       = true
 
-  s.source             = { :http => "http://lib.creapp.hu/ios/#{s.name}-#{s.version}.tgz" }
+  s.default_subspec = 'Library'
+
+  s.subspec 'Library' do |l|
+    l.source_files       = '*.h'
+    l.vendored_libraries = '*.a'
+    l.library            = "#{s.name}-#{s.version}"
+  end
+
+  s.subspec 'Devel' do |dev|
+    dev.source_files     = "#{s.name}/**/*.{h,m}"
+  end
 end
