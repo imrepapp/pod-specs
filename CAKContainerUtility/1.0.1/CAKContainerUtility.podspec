@@ -15,5 +15,5 @@ Pod::Spec.new do |s|
   s.library            = "#{s.name}-#{s.version}"
   s.requires_arc       = true
 
-  s.source             = { :http => "http://lib.creapp.hu/ios/#{s.name}-#{s.version}.tgz" }
+  s.source             = { :http => "https://github.com/imrepapp/libraries/raw/master/ios/#{s.name}-#{s.version}.tgz" }
 end
